@@ -84,16 +84,17 @@ $(call inherit-product-if-exists, frameworks/webview/chromium/chromium.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 
 # include available languages for TTS in the system image
--include external/svox/pico/lang/PicoLangDeDeInSystem.mk
--include external/svox/pico/lang/PicoLangEnGBInSystem.mk
--include external/svox/pico/lang/PicoLangEnUsInSystem.mk
--include external/svox/pico/lang/PicoLangEsEsInSystem.mk
--include external/svox/pico/lang/PicoLangFrFrInSystem.mk
--include external/svox/pico/lang/PicoLangItItInSystem.mk
+#-include external/svox/pico/lang/PicoLangDeDeInSystem.mk
+#-include external/svox/pico/lang/PicoLangEnGBInSystem.mk
+#-include external/svox/pico/lang/PicoLangEnUsInSystem.mk
+#-include external/svox/pico/lang/PicoLangEsEsInSystem.mk
+#-include external/svox/pico/lang/PicoLangFrFrInSystem.mk
+#-include external/svox/pico/lang/PicoLangItItInSystem.mk
 
 # locale. en_US is both first and in alphabetical order to
 # ensure this is the default locale.
 PRODUCT_LOCALES := \
+	it_IT \
 	en_US \
 	ar_EG \
 	ar_IL \
@@ -128,7 +129,6 @@ PRODUCT_LOCALES := \
 	hu_HU \
 	id_ID \
 	it_CH \
-	it_IT \
 	ja_JP \
 	ko_KR \
 	lt_LT \

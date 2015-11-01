@@ -30,10 +30,7 @@ PRODUCT_PACKAGES += \
     CertInstaller \
     Contacts \
     DeskClock \
-    DocumentsUI \
     DownloadProviderUi \
-    Email \
-    Exchange2 \
     ExternalStorageProvider \
     FusedLocation \
     InputDevices \
@@ -41,7 +38,6 @@ PRODUCT_PACKAGES += \
     Keyguard \
     LatinIME \
     ManagedProvisioning \
-    PicoTts \
     PacProcessor \
     libpac \
     PrintSpooler \
@@ -50,7 +46,6 @@ PRODUCT_PACKAGES += \
     SharedStorageBackup \
     Telecom \
     TeleService \
-    VpnDialogs \
     MmsService
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_base.mk)
